@@ -98,9 +98,8 @@ class ORFExtractor:
                 SeqIO.write(record, fasta, "fasta")
 
 
-# === RUN SCRIPT ===
-fasta_input = "data/Homo_sapiens_cdna_assembed.fasta"
-output_name = "output/orfs"
+fasta_input = "orf/data/Homo_sapiens_cdna_assembed.fasta"
+output_name = "orf/output/orfs"
 
 extractor = ORFExtractor(fasta_input)
 extractor.extract()

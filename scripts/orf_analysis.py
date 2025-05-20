@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 from Bio import SeqIO
 import math
 
-FASTA_FILE = "output/orfs.fasta"
-BLAST_FILE = "output/blast_results.tsv"
+FASTA_FILE = "orf/output/orfs.fasta"
+BLAST_FILE = "orf/output/blast_results.tsv"
 
 def get_validated_orfs(blast_path):
     validated_ids = set()
