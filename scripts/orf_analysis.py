@@ -42,7 +42,7 @@ def plot_histograms(true_lengths, false_lengths):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig("orf/orf_length_distribution.png")
+    plt.savefig("orf_length_distribution.png")
     plt.show()
 
 def estimate_geometric_expectation():
