@@ -27,12 +27,12 @@ All the analysis is executed inside a Docker container to ensure reproducibility
    BLASTed each ORF against SwissProt (human entries only, taxid: 9606) to identify coding sequences
 
    command used: blastx -db /home/max/data-mining/orf/dockerfiles/blast/v2.16.0/swissprot \
-       -query /home/max/data-mining/orf/orfs.fasta \
+       -query /home/max/data-mining/orf/output/orfs.fasta \
        -taxids 9606 \
        -evalue 1e-5 \
        -outfmt 7 \
        -num_threads 4 \
-       -out /home/max/data-mining/orf/blast_results.tsv
+       -out /home/max/data-mining/orf/output/blast_results.tsv
 
 3. **Annotation Update**  
    GFF file updated with BLAST-based annotations (CDS vs UTR).
