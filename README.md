@@ -31,7 +31,6 @@ All the analysis is executed inside a Docker container to ensure reproducibility
        -taxids 9606 \
        -evalue 1e-5 \
        -outfmt 7 \
-       -max_target_seqs 1 \
        -num_threads 4 \
        -out /home/max/data-mining/orf/blast_results.tsv
 
@@ -56,7 +55,7 @@ Estimated mean ORF length : 64 nt
 
 A large number of false positives are short ORFs, likely resulting from random occurrences of start/stop codons in non-coding regions.
 
-![ORF Length Distribution](orf/orf_length_distribution.png)
+![ORF Length Distribution](orf_length_distribution.png)
 
 ---
 

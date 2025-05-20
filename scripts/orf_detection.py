@@ -2,7 +2,7 @@ from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio.Data.CodonTable import standard_dna_table
-
+import os
 
 class ORF:
     def __init__(self, seq, src, start, end, frame):
@@ -98,8 +98,8 @@ class ORFExtractor:
                 SeqIO.write(record, fasta, "fasta")
 
 
-fasta_input = "orf/data/Homo_sapiens_cdna_assembed.fasta"
-output_name = "orf/output/orfs"
+fasta_input = "data/Homo_sapiens_cdna_assembed.fasta"
+output_name = "output/orfs"
 
 extractor = ORFExtractor(fasta_input)
 extractor.extract()

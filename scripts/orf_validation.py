@@ -1,10 +1,9 @@
-import os
 from collections import defaultdict
 
-BLAST_FILE = "orf/output/blast_results.tsv"
-GFF_FILE = "orf/output/orfs.gff"
-UPDATED_GFF_FILE = "orf/output/orfs_validated.gff"
-FASTA_FILE = "orf/output/orfs.fasta"
+BLAST_FILE = "output/blast_results.tsv"
+GFF_FILE = "output/orfs.gff"
+UPDATED_GFF_FILE = "output/orfs_validated.gff"
+FASTA_FILE = "output/orfs.fasta"
 
 EVALUE_THRESHOLD = 1e-5
 
